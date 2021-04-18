@@ -1,31 +1,31 @@
 -- {{{ Required libraries
 -- Standard awesome library
-local awful     = require("awful")
-local beautiful = require("beautiful")
+local awful     = require("awful");
+local beautiful = require("beautiful");
 
-local wibox = require("wibox")
-local lain  = require("lain")
+local wibox = require("wibox");
+local lain  = require("lain");
 
 -- Custom Local Library
-local gmc = require("themes.gmc")
+local gmc = require("themes.gmc");
 -- }}}
 
 -- Separators lain
-local separators  = lain.util.separators
+local separators  = lain.util.separators;
 
 -- shortcuts
-local setbg = wibox.widget.background
-local setar = separators.arrow_right
-local setal = separators.arrow_left
-local cws   = clone_widget_set
-local cis   = clone_icon_set
+local setbg = wibox.widget.background;
+local setar = separators.arrow_right;
+local setal = separators.arrow_left;
+local cws   = clone_widget_set;
+local cis   = clone_icon_set;
   
 -- example
-local icon_example = wibox.widget.imagebox(beautiful.widget_example)
+local icon_example = wibox.widget.imagebox(beautiful.widget_example);
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-local WB = wibox_package
+local WB = wibox_package;
 
 function WB.initdeco ()
     -- Spacer

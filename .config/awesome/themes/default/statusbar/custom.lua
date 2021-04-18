@@ -6,18 +6,18 @@
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Standard awesome library
-local awful = require("awful")
-local beautiful = require("beautiful")
+local awful = require("awful");
+local beautiful = require("beautiful");
 
 -- Wibox handling library
-local wibox = require("wibox")
-local W = clone_widget_set     -- object name
-local I = clone_icon_set       -- object name
+local wibox = require("wibox");
+local W = clone_widget_set;     -- object name
+local I = clone_icon_set;       -- object name
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- ALSA volume from copycat-multicolor
-I.uptime = wibox.widget.imagebox(beautiful.widget_fs)
+I.uptime = wibox.widget.imagebox(beautiful.widget_fs);
 
 W.uptime = wibox.widget.textbox()
 

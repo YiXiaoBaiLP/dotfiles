@@ -20,6 +20,13 @@ local setbg = wibox.widget.background;
 local setar = separators.arrow_right;
 local setal = separators.arrow_left;
 
+-- 下面所用的变量
+local cws = clone_widget_set;
+local cis = clone_icon_set;
+
+-- 下面所用的图片资源
+local icon_example = wibox.widget.imagebox(beautiful.widget_example);
+
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 local WB = wibox_package;
@@ -33,6 +40,7 @@ mykeyboardlayout = awful.widget.keyboardlayout();
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
+-- 左上角显示的内容
 function WB.add_widgets_top_left (s)
   return { -- Left widgets
     layout = wibox.layout.fixed.horizontal,
@@ -46,10 +54,8 @@ function WB.add_widgets_top_left (s)
   }
 end
 
+-- 右上角显示的内容
 function WB.add_widgets_top_right (s)
-  local cws = clone_widget_set
-  local cis = clone_icon_set
-
   return { -- Right widgets
     layout = wibox.layout.fixed.horizontal,
 
@@ -58,19 +64,61 @@ function WB.add_widgets_top_right (s)
     --setbg(cws.weather,         gmc.color['blue500']),
     --setar(gmc.color['blue500'], "alpha"),
 
-    --  progressbar
-    cis.volume_dynamic,  cws.volumewidget,
-    cis.disk,            cws.disk_bar_widget,
-    cis.battery,         cws.battery_bar_widget,
+    -- 空格
+    WB.spacer,
+    setal("alpha", gmc.color['blue700']),
+    setal(gmc.color['blue700'], gmc.color['blue500']),
+    -- 下载图标
+    setbg(cis.netdown, gmc.color['blue500']),
+    setbg(cws.netdowninfo, gmc.color['blue500']),
+    -- 上传图标
+    setal(gmc.color['blue500'], gmc.color['blue700']),
+    setbg(cis.netup, gmc.color['blue700']),
+    setbg(cws.netupinfo, gmc.color['blue700']),
+    -- 内存使用量
+    setal(gmc.color['blue700'], gmc.color['blue500']),
+    setbg(cis.mem, gmc.color['blue500']),
+    setbg(cws.mem, gmc.color['blue500']),
+    -- CPU 占用
+    setal(gmc.color['blue500'], gmc.color['blue700']),
+    setbg(cis.cpu, gmc.color['blue700']),
+    setbg(cws.cpu, gmc.color['blue700']),
+    -- cpu 温度
+    setal(gmc.color['blue700'], gmc.color['blue500']),
+    setbg(cis.temp, gmc.color['blue500']),
+    setbg(cws.temp, gmc.color['blue500']),
 
-    -- default
-    WB.arrow_dl,         WB.arrow_ld,
+    -- 音量
+    setal(gmc.color['blue500'], gmc.color['blue700']),
+    setbg(cis.volume_dynamic, gmc.color['blue700']),
+    setbg(cws.volumewidget, gmc.color['blue700']),
+    -- 硬盘
+    -- setal(gmc.color['blue700'], gmc.color['blue500']),
+    -- setbg(cis.disk, gmc.color['blue500']),
+    -- setbg(cws.disk_bar_widget, gmc.color['blue500']),
+    -- 电池
+    setal(gmc.color['blue700'], gmc.color['blue500']),
+    setbg(cis.battery, gmc.color['blue500']),
+    setbg(cws.battery_bar_widget, gmc.color['blue500']),
+
+    setal(gmc.color['blue500'], gmc.color['blue700']),
+    setal(gmc.color['blue700'], "alpha"),
+    WB.spacer,
+    WB.arrow_dl,
+    WB.arrow_ld,
     --mykeyboardlayout,
     wibox.widget.systray(),
     mytextclock,
     s.layoutbox,
   }
 end
+
+
+-- 左下角显示的内容
+
+
+
+-- 右下角显示的内容
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -81,14 +129,15 @@ function WB.generate_wibox_one (s)
   s.wibox_top_top = awful.wibar({
     position = "top",
     screen = s,
-    height = "40"
+    height = "40",
+    widget = s.tasklist
   })
 
   -- Add widgets to the wibox
   s.wibox_top_top:setup {
     layout = wibox.layout.align.horizontal,
     WB.add_widgets_top_left (s),
-    nil,
+    s.tasklist,
     WB.add_widgets_top_right (s),
   }
 end

@@ -77,7 +77,7 @@ function _M.init()
     
     -- Create the top wibox
     WB.generate_wibox_one(s)
-    WB.generate_wibox_tasklist(s)
+    --WB.generate_wibox_tasklist(s)
 
     -- Create the bottom wibox
     WB.generate_wibox_two(s)

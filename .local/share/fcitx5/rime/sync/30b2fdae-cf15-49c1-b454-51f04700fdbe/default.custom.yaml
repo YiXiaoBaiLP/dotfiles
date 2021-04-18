@@ -1,0 +1,17 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Thu Jul 30 11:16:51 2020"
+  rime_version: 1.5.3
+patch:
+  "menu/page_size": 9
+  punctuator:
+    full_shape: {" ": {commit: " "}, "!": {commit: "！"}, "\"": {pair: ["“", "”"]}, "#": "#", "$": "￥", "%": "%", "&": "&", "'": {pair: ["‘", "’"]}, "(": "（", ")": "）", "*": "*", ",": {commit: "，"}, .: {commit: "。"}, "/": "、", ":": {commit: "："}, ";": {commit: "；"}, "<": "《", ">": "》", "?": {commit: "？"}, "@": "@", "[": "【", "]": "】", "^": {commit: "……"}, _: "——", "`": "｀", "{": "｛", "|": "｜", "}": "｝", "~": "~"}
+    half_shape: {" ": {commit: " "}, "!": {commit: "！"}, "\"": {pair: ["“", "”"]}, "#": "#", "$": "￥", "%": "%", "&": "&", "'": {pair: ["‘", "’"]}, "(": "（", ")": "）", "*": "*", ",": {commit: "，"}, .: {commit: "。"}, "/": "、", ":": {commit: "："}, ";": {commit: "；"}, "<": "《", ">": "》", "?": {commit: "？"}, "@": "@", "[": "【", "]": "】", "^": {commit: "……"}, _: "——", "`": "｀", "{": "｛", "|": "｜", "}": "｝", "~": "~"}
+    import_preset: default
+  schema_list:
+    - {schema: luna_pinyin_simp}
+    - {schema: bopomofo}
+    - {schema: luna_quanpin}
+    - {schema: stroke}

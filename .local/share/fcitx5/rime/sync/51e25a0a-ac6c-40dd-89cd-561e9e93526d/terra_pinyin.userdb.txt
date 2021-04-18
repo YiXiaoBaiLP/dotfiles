@@ -1,0 +1,21 @@
+# Rime user dictionary
+#@/db_name	terra_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	11
+#@/user_id	51e25a0a-ac6c-40dd-89cd-561e9e93526d
+a1 se4 	阿瑟	c=0 d=0.0995012 t=11
+a1 se4 de5 	阿瑟的	c=1 d=1 t=11
+ao2 ao2 	嗷嗷	c=0 d=0.0995012 t=11
+ao2 ao2 ao2 ao2 	嗷嗷嗷嗷	c=1 d=1 t=11
+de5 	的	c=0 d=0.0995012 t=11
+o1 	噢	c=0 d=0.099005 t=11
+pu1 	撲	c=0 d=0.099005 t=11
+shi4 da4 fu1 	士大夫	c=5 d=4.88672 t=11
+shi4 fou3 	是否	c=1 d=1.0847 t=11
+ta1 	他	c=0 d=0.099005 t=11
+ta1 o1 yu4 ce4 shi4 fou3 yi4 e4 pu1 	他噢預測是否溢惡撲	c=1 d=0.995012 t=11
+wo3 shi4 	我是	c=1 d=0.97531 t=11
+yi4 e4 	溢惡	c=0 d=0.099005 t=11
+yu4 ce4 	預測	c=0 d=0.099005 t=11
+zen3 mo2 hui2 shi4 	怎麼回事	c=1 d=0.970446 t=11

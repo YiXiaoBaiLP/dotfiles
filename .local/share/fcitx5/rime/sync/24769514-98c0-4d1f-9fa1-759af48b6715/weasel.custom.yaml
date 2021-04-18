@@ -1,0 +1,15 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue Dec  1 09:27:57 2020"
+  rime_version: 1.5.3
+patch:
+  "app_options/gvim.exe" : true  #程序名字全用小写字母
+  "ascii_mode" : true
+  "style/color_scheme": dark_temple
+  "style/display_tray_icon": false # 显示托盘图标
+  "style/font_face": "微软雅黑"
+  "style/font_point": 14
+  "style/horizo​​ntal": true
+  "style/inline_preedit": false # 内镶编码

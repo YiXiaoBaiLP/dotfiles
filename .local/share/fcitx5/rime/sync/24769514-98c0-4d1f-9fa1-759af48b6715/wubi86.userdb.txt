@@ -1,0 +1,85 @@
+# Rime user dictionary
+#@/db_name	wubi86.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	135
+#@/user_id	24769514-98c0-4d1f-9fa1-759af48b6715
+aaaa 	工	c=1 d=0.687289 t=135
+b 	了	c=1 d=0.759572 t=135
+bghg 	耳	c=2 d=1.05739 t=135
+c 	以	c=1 d=0.67032 t=135
+dcg 	码	c=1 d=0.618783 t=135
+e 	有	c=1 d=0.66365 t=135
+eeee 	月	c=1 d=0.524663 t=135
+eup 	膀	c=1 d=0.666977 t=135
+fal 	载	c=1 d=0.786628 t=135
+fdsa 	魂牵梦萦	c=1 d=0.697676 t=135
+fgh 	十	c=2 d=1.02598 t=135
+fghu 	雫	c=1 d=0.532592 t=135
+fwmj 	规则	c=1 d=0.628135 t=135
+g 	一	c=1 d=0.694197 t=135
+ggll 	一	c=1 d=0.565525 t=135
+gkmj 	融	c=1 d=0.615697 t=135
+hhll 	丨	c=1 d=0.56836 t=135
+jgjf 	量	c=1 d=0.588605 t=135
+jvko 	照	c=2 d=1.1714 t=135
+jysg 	日记本	c=1 d=0.640824 t=135
+kbsk 	啊	c=1 d=0.585669 t=135
+kwwl 	中华人民共和国	c=1 d=0.66034 t=135
+ladg 	加工厂	c=1 d=0.644036 t=135
+lkfj 	加进	c=1 d=0.937067 t=135
+nnll 	乙	c=1 d=0.57695 t=135
+pfqc 	寇	c=1 d=0.612626 t=135
+pksu 	空中楼阁	c=1 d=0.657047 t=135
+po 	灾	c=1 d=0.778801 t=135
+pvs 	案	c=1 d=0.680451 t=135
+pwuk 	窘况	c=1 d=0.647265 t=135
+qguy 	鳑	c=1 d=1 t=135
+rv 	扫	c=1 d=0.594521 t=135
+rvyo 	热	c=1 d=0.582748 t=135
+ryxt 	扩张	c=2 d=1.26263 t=135
+s 	要	c=1 d=0.690734 t=135
+samw 	横	c=1 d=0.683861 t=135
+sd 	枯	c=1 d=0.932394 t=135
+sdkj 	棒喝	c=1 d=0.790571 t=135
+shwy 	相信	c=1 d=0.631284 t=135
+ttll 	丿	c=1 d=0.571209 t=135
+uygh 	辛	c=1 d=0.522046 t=135
+uygy 	六	c=2 d=1.05749 t=135
+vbfc 	好运	c=2 d=1.25633 t=135
+vx 	姆	c=1 d=0.763379 t=135
+wa 	代	c=1 d=0.782705 t=135
+www 	众	c=1 d=0.527292 t=135
+wwww 	人	c=1 d=0.529935 t=135
+xrxe 	缩手缩脚	c=1 d=0.65377 t=135
+ygh 	证	c=1 d=0.535261 t=135
+ygte 	旗开得胜	c=1 d=0.650509 t=135
+yoa 	弈	c=1 d=0.597501 t=135
+yyll 	丶	c=1 d=0.574072 t=135
+encaasv 	工要	c=0 d=0.0690734 t=135
+encbguy 	耳辛	c=0 d=0.0522046 t=135
+encbnvx 	了姆	c=1 d=0.774916 t=135
+encdeny 	有膀以	c=1 d=0.677057 t=135
+encfguy 	十六	c=0 d=0.0516851 t=135
+encfmsw 	规则相信	c=0 d=0.0631284 t=135
+encfubg 	十六耳	c=0 d=0.0519442 t=135
+encfubu 	十六耳辛	c=0 d=0.0522046 t=135
+encfybu 	雫证耳六	c=1 d=0.562705 t=135
+encgfda 	一魂牵梦萦	c=1 d=0.755784 t=135
+encgghh 	一丨	c=0 d=0.056836 t=135
+encghtt 	一丨丿	c=0 d=0.0571209 t=135
+encghty 	一丨丿丶	c=0 d=0.0574072 t=135
+enchhtt 	丨丿	c=0 d=0.0571209 t=135
+enchtyy 	丨丿丶	c=0 d=0.0574072 t=135
+encjvrv 	照热	c=0 d=0.0582748 t=135
+enckbjg 	啊量	c=0 d=0.0588605 t=135
+encpwfk 	灾代载棒喝	c=1 d=0.927743 t=135
+encrvyo 	扫弈	c=1 d=0.609571 t=135
+encrxfm 	扩张规则	c=0 d=0.0628135 t=135
+encrypf 	扫弈寇	c=0 d=0.0612626 t=135
+encslfj 	枯加进	c=1 d=0.995012 t=135
+encswvf 	相信好运	c=0 d=0.0634448 t=135
+encttyy 	丿丶	c=0 d=0.0574072 t=135
+encubuy 	六耳辛	c=0 d=0.0522046 t=135
+encuybg 	六耳	c=0 d=0.0519442 t=135
+encvfrx 	好运扩张	c=0 d=0.0637628 t=135
