@@ -1,7 +1,11 @@
--- {{{ Required libraries
-local gears = require("gears")
-local awful = require("awful")
--- }}}
+--[[
+
+    绑定：任务列表按钮
+    
+--]]
+-- Required libraries
+local gears = require("gears");
+local awful = require("awful");
 
 local _M = {}
 

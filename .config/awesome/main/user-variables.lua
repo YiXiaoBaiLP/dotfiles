@@ -1,6 +1,8 @@
--- {{{ Global Variable Definitions
--- moved here in module as local variable
--- }}}
+--[[
+
+    用户变量
+
+--]]
 
 local home = os.getenv("HOME")
 

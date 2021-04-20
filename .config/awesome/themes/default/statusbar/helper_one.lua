@@ -113,13 +113,6 @@ function WB.add_widgets_top_right (s)
   }
 end
 
-
--- 左下角显示的内容
-
-
-
--- 右下角显示的内容
-
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 function WB.generate_wibox_one (s)

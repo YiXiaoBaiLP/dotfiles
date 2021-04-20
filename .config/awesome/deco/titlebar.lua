@@ -1,3 +1,11 @@
+--[[
+
+    标题栏
+        创建标题栏小部件
+        标题栏的按钮绑定
+
+--]]
+
 -- module("anybox.titlebar", package.seeall)
 
 -- Standard awesome library
@@ -22,7 +30,14 @@ client.connect_signal("request::titlebars", function(c)
             awful.mouse.client.resize(c)
         end)
     )
-
+    -- create titlebar Widget
+    -- 标题栏的按钮绑定
+    --[[
+        标题栏中包含三个部分：
+            左：图标
+            中：标题
+            右：按钮
+    --]]
     awful.titlebar(c) : setup {
         { -- Left
             awful.titlebar.widget.iconwidget(c),

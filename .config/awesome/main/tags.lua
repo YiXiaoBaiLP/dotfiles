@@ -1,5 +1,10 @@
--- Standard awesome library
-local awful = require("awful")
+--[[
+
+    标签模块
+
+--]]
+
+local awful = require("awful");
 
 local _M = {}
 

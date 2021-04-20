@@ -19,14 +19,14 @@ local I = clone_icon_set;       -- object name
 -- ALSA volume from copycat-multicolor
 I.uptime = wibox.widget.imagebox(beautiful.widget_fs);
 
-W.uptime = wibox.widget.textbox()
+W.uptime = wibox.widget.textbox();
 
 W.update_uptime = function()
     local fg_color = "#000000"
     local cmd = {"uptime", "-p"}
     awful.spawn.easy_async(cmd, function(stdout, stderr, reason, exit_code)
       W.uptime:set_markup(markup(fg_color, stdout))
-    end)    
+    end)
 end
 
 W.update_uptime()

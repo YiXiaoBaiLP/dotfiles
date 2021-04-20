@@ -1,13 +1,19 @@
--- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
+--[[
 
-local _M = {}
+    全局按钮模块
+
+]]
+
+-- Standard awesome library
+local gears = require("gears");
+local awful = require("awful");
+
+local _M = {};
 local modkey = RC.vars.modkey
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-
--- {{{ Key bindings
+-- 全局按钮
+-- 您可以使用right click鼠标按钮打开菜单
 
 function _M.get(globalkeys)
   -- Bind all key numbers to tags.

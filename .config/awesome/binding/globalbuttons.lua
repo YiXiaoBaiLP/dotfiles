@@ -1,3 +1,16 @@
+--[[
+
+     全局键
+     全局键脚本负责配置：
+        弹出帮助，
+        标签浏览，
+        标准程序，
+        布局操作，
+        提示，
+        调整大小，
+        移动和菜单栏。
+
+--]]
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")

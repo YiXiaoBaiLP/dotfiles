@@ -1,6 +1,12 @@
+--[[
+
+   ±ÚÖ½Ä£¿é
+
+--]]
+
 -- Standard awesome library
-local gears = require("gears")
-local beautiful = require("beautiful")
+local gears          = require("gears");
+local beautiful      = require("beautiful");
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 

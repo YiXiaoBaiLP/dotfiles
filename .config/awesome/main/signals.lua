@@ -1,3 +1,9 @@
+--[[
+
+    пе╨едё©И
+
+--]]
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")

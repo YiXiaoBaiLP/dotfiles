@@ -1,3 +1,15 @@
+--[[
+
+     绑定到标签模块
+
+    这包括以下四个部分：
+        仅查看标签。
+        切换标签显示。
+        将客户端移动到标签。
+        在重点客户上切换标签。
+
+--]]
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")

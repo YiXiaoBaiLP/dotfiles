@@ -1,8 +1,14 @@
--- Standard Awesome library
-local gears = require("gears")
-local awful = require("awful")
+--[[
 
-local _M = {}
+        客户端密钥模块
+
+--]]
+
+-- Standard Awesome library
+local gears  = require("gears");
+local awful  = require("awful");
+
+local _M     = {};
 local modkey = RC.vars.modkey
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -10,7 +16,8 @@ local modkey = RC.vars.modkey
 function _M.get()
   local clientkeys = gears.table.join(
 
-    --   -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    -- {{{ 客户布局操作 
     -- Original Example Key Bindings
     awful.key({ modkey,           }, "f",
       function (c)
@@ -35,6 +42,7 @@ function _M.get()
         c.minimized = true
       end ,
       {description = "minimize", group = "client"}),
+      -- }}}
 
     --   -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
     -- Custom Fix Size

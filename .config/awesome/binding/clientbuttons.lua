@@ -1,8 +1,14 @@
--- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
+--[[
 
-local _M = {}
+    客户端按钮模块
+    
+--]]
+
+-- Standard awesome library
+local gears = require("gears");
+local awful = require("awful");
+
+local _M = {};
 local modkey = RC.vars.modkey
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
