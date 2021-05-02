@@ -1,0 +1,112 @@
+!!=============================================================================
+!! RXVT-unicode setting
+!!=============================================================================
+Xft.dpi: 120
+! 将色深设置为256
+URxvt.depth: 256
+!Black
+URxvt.color0:#000000
+URxvt.color8:#555753
+!Red
+URxvt.color1:#CC0000
+URxvt.color9:#EF2929
+!Green
+URxvt.color2:#4E9A06
+URxvt.color10:#8AE234
+!Yellow
+URxvt.color3:#C4A000
+URxvt.color11:#FCE94F
+!Blue
+URxvt.color4:#3465A4
+URxvt.color12:#729FCF
+!Magenta
+URxvt.color5:#75507B
+URxvt.color13:#AD7FA8
+!Cyan
+URxvt.color6:#06989A
+URxvt.color14:#34E2E2
+!White
+URxvt.color7:#D3D7CF
+URxvt.color15:#EEEEEC
+
+!!滚动条设置
+
+! 滚动条样式
+URxvt.scrollstyle:plain
+! 滚动条颜色
+URxvt.scrollColor:#FF99CC
+! 滚动槽颜色
+URxvt.troughColor:#CCFF99
+! 边框颜色
+URxvt.borderColor:#66CCFF
+! 启用滚动条
+URxvt.scrollBar:True
+! 滚动条在窗口的右边
+URxvt.scrollBar_right:True
+! 滚动条不浮动
+URxvt.scrollBar_floating:True
+!滚屏设置
+URxvt.mouseWheelScrollPage:True
+URxvt.scrollTtyOutput:False
+URxvt.scrollWithBuffer:True
+URxvt.scrollTtyKeypress:True
+
+!!光标设置
+! 光标改为下划线
+URxvt.cursorUnderline:True
+! 光标闪烁
+URxvt.cursorBlink:True
+! 设置回滚缓冲区
+URxvt.saveLines:7777
+
+!!边框
+!URxvt.borderLess:True
+
+!! 字体设置
+URxvt.letterSpace: -1
+URxvt.font:xft:Cascadia Code PL:size=12:atialias=true:hinting=true,xft:文泉驿等宽微米黑:size=12
+URxvt.boldfont:xft:Cascadia Code PL:bold:size=12:atialias=true:hinting=true, xft:文泉驿等宽微米黑:style=BOld:size=12
+
+!! 窗口大小
+URxvt.geometry: 110x50
+
+URxvt.title:URxvt
+! 设置终端的图标
+!URxvt.iconFile: /usr/share/icons/gnome/16x16/apps/terminal.png
+!!中括号内数表示透明度
+! 设置透明度
+URxvt.transparent:True
+! 设置背景色
+URxvt.background:#3465A4
+! 设置透明度的颜色
+URxvt.tintColor:#FFFFFF
+! 设置阴影 0-200 ， 100表示没有阴影
+URxvt.shading:100
+! 设置背景模糊
+URxvt.blurRadius:110x50
+! 设置前景色
+URxvt.foreground:#f2eaca
+! 失去焦点时窗口变暗
+URxvt.fading: 20
+
+! perl扩展:支持Ctrl+ALT+C拷贝,支持终端链接可打开,支持快捷键调整字体大小
+URxvt.perl-ext-common: selection-to-clipboard,matcher,resize-font,searchable-scrollback
+URxvt.perl-ext: url-select
+!URL操作
+URxvt.url-launcher: /usr/bin/vivaldi-stable
+URxvt.matcher.button: 1
+!!URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.matcher.rend.0: Uline Bold
+URxvt.colorUL: #ff0000
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/local/bin/conkeror
+URxvt.url-select.underline: true
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+!! 打开搜索功能
+URxvt.keysym.M-s: searchable-scrollback:start
+!! 复制与粘贴相关的配置
+URxvt.perl-ext-common: ...,clipboard,...
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
