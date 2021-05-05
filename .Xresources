@@ -1,9 +1,32 @@
 !!=============================================================================
 !! RXVT-unicode setting
 !!=============================================================================
-Xft.dpi: 120
-! 将色深设置为256
-URxvt.depth: 256
+Xft.dpi: 96
+! 将色深设置为32
+URxvt.depth: 32
+
+!! 窗口大小
+URxvt.geometry: 110x50
+
+URxvt.title:URxvt
+! 设置终端的图标
+URxvt.iconFile:/home/yixiaobai/.config/ions/Apps/128x128/terminal_icon.png
+!!中括号内数表示透明度
+! 设置透明度
+URxvt.transparent:True
+! 设置背景色
+URxvt.background:[70]#CCFFFF
+! 设置前景色
+URxvt.foreground:#000000
+! 设置透明度的颜色
+!URxvt.tintColor:#CCFFFF
+! 设置阴影 0-200 ， 100表示没有阴影
+URxvt.shading:100
+! 设置背景模糊
+URxvt.blurRadius:110x50
+! 失去焦点时窗口变暗
+URxvt.fading: 20
+
 !Black
 URxvt.color0:#000000
 URxvt.color8:#555753
@@ -30,9 +53,12 @@ URxvt.color7:#D3D7CF
 URxvt.color15:#EEEEEC
 
 !!滚动条设置
-
+!实时更新
+URxvt.skipScroll:False
 ! 滚动条样式
 URxvt.scrollstyle:plain
+! 滚动条的宽度
+URxvt.thickness:2
 ! 滚动条颜色
 URxvt.scrollColor:#FF99CC
 ! 滚动槽颜色
@@ -41,14 +67,17 @@ URxvt.troughColor:#CCFF99
 URxvt.borderColor:#66CCFF
 ! 启用滚动条
 URxvt.scrollBar:True
+! 显示滚动条的凹槽
+URxvt.scrollBar_floating:False
 ! 滚动条在窗口的右边
 URxvt.scrollBar_right:True
-! 滚动条不浮动
-URxvt.scrollBar_floating:True
 !滚屏设置
 URxvt.mouseWheelScrollPage:True
+! tty 收到输出时不滚动到底部
 URxvt.scrollTtyOutput:False
+! tty接收到新行时，使用回滚缓冲区进行滚动
 URxvt.scrollWithBuffer:True
+! 按下非特殊案件时，滚动到底部
 URxvt.scrollTtyKeypress:True
 
 !!光标设置
@@ -56,38 +85,22 @@ URxvt.scrollTtyKeypress:True
 URxvt.cursorUnderline:True
 ! 光标闪烁
 URxvt.cursorBlink:True
-! 设置回滚缓冲区
-URxvt.saveLines:7777
+! 缓冲去中保存的行树
+URxvt.saveLines:77777
 
 !!边框
+! 无边框
 !URxvt.borderLess:True
+! 内边框 最大值100
+URxvt.internalBorder: 2
+! 外边框 最大值100
+URxvt.externalBorder: 2
 
 !! 字体设置
 URxvt.letterSpace: -1
-URxvt.font:xft:Cascadia Code PL:size=12:atialias=true:hinting=true,xft:文泉驿等宽微米黑:size=12
-URxvt.boldfont:xft:Cascadia Code PL:bold:size=12:atialias=true:hinting=true, xft:文泉驿等宽微米黑:style=BOld:size=12
+URxvt.font:xft:Cascadia Code PL:size=11:atialias=true:hinting=true,xft:文泉驿等宽微米黑:size=11
+URxvt.boldfont:xft:Cascadia Code PL:bold:size=11:atialias=true:hinting=true, xft:文泉驿等宽微米黑:style=BOld:size=11
 
-!! 窗口大小
-URxvt.geometry: 110x50
-
-URxvt.title:URxvt
-! 设置终端的图标
-!URxvt.iconFile: /usr/share/icons/gnome/16x16/apps/terminal.png
-!!中括号内数表示透明度
-! 设置透明度
-URxvt.transparent:True
-! 设置背景色
-URxvt.background:#3465A4
-! 设置透明度的颜色
-URxvt.tintColor:#FFFFFF
-! 设置阴影 0-200 ， 100表示没有阴影
-URxvt.shading:100
-! 设置背景模糊
-URxvt.blurRadius:110x50
-! 设置前景色
-URxvt.foreground:#f2eaca
-! 失去焦点时窗口变暗
-URxvt.fading: 20
 
 ! perl扩展:支持Ctrl+ALT+C拷贝,支持终端链接可打开,支持快捷键调整字体大小
 URxvt.perl-ext-common: selection-to-clipboard,matcher,resize-font,searchable-scrollback
