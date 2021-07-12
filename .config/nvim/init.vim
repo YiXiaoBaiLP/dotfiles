@@ -1,12 +1,11 @@
-" __  ____   __  _   ___     _____ __  __ ____   ____
-"|  \/  \ \ / / | \ | \ \   / /_ _|  \/  |  _ \ / ___|
-"| |\/| |\ V /  |  \| |\ \ / / | || |\/| | |_) | |
-"| |  | | | |   | |\  | \ V /  | || |  | |  _ <| |___
-"|_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
+" ███╗   ███╗██╗   ██╗    ███╗   ██╗██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+" ████╗ ████║╚██╗ ██╔╝    ████╗  ██║██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+" ██╔████╔██║ ╚████╔╝     ██╔██╗ ██║██║   ██║██║██╔████╔██║██████╔╝██║
+" ██║╚██╔╝██║  ╚██╔╝      ██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║
+" ██║ ╚═╝ ██║   ██║       ██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+" ╚═╝     ╚═╝   ╚═╝       ╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
-" Author: @LiuPeng
-"
-"
+" Author: @YiXiaoBai
 
 
 " 判断操作系统类型
@@ -31,30 +30,30 @@ else
     let g:isGUI = 0
 endif
 
-" 自动加载vim-plug插件，如果没有安装的情况下
-if has(g:isLinux == 1)
-	if empty(glob('~/.config/nvim/autoload/plug.vim'))
-		silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-	endif
-elseif has(g:isWIN == 1)
-	if empty(glob('C:\\Users\\admin\\AppData\\Local\\nvim\\autoload'))
-		silent !curl -fLo 'C:\\Users\\admin\\AppData\\Local\\nvim\\autoload\\plug.vim' --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-	endif
+" 第一次使用nvim时自动加载插件
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+   		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 
 " #######################################   基本设置   ######################################
 
-set nocompatible                                                    " 不启用vi的键盘模式,关闭兼容模式(必须设置在开头)
-set history=2000                                                    " 设置历史操作记录为2000条
-filetype on                                                         " 关闭文件类型自动检测功能,这个功能被filetype plugin indent on代替
-filetype plugin indent on                                           " 载入文件类型插件,代替filetype off 
+" 不启用vi的键盘模式,关闭兼容模式(必须设置在开头)
+set nocompatible
+" 设置历史操作记录为2000条
+set history=2000
+" 语法高亮支持
+syntax on
+" 载入特定文件类型的插件文件,以及特定文件的缩进文件
+filetype plugin indent on
 " 自动加载matchit插件（增强版的%括号跳转）
 runtime macros/matchit.vim
 
+"
 " 设置文件编码和文件格式
+"
 set fileencodings=utf-8,gb2312,gbk,gb18030,big5,ucs-bom,cp936,latin-1
 set fenc=utf-8
 set encoding=utf-8
@@ -62,37 +61,75 @@ set termencoding=utf-8
 set fileformat=unix
 set fileformats=unix,mac,dos
 
-"set guifont=JetBrains\ Mono:h11:cANSI                              " 设置字体
-set backspace=2                                                     " 设置退格键可用
-set autoindent                                                      " 自动对齐
-set ai!                                                             " 设置自动缩进
-set smartindent                                                     " 智能自动缩进
-set relativenumber                                                  " 开启相对行号
-set number                                                          " 显示行号
-set ruler                                                           " 右下角显示光标位置的状态行
-set incsearch                                                       " 开启实时搜索功能
-set hlsearch                                                        " 开启高亮显示结果
-set nowrapscan                                                      " 搜索到文件两端时不重新搜索
-set hidden                                                          " 允许在有未保存的修改时切换缓冲区
-set autochdir                                                       " 设定文件浏览器目录为当前目录
-set foldmethod=indent                                               " 选择代码折叠类型
-set foldlevel=100                                                   " 禁止自动折叠
-set laststatus=2                                                    " 开启状态栏信息
-set cmdheight=2                                                     " 命令行的高度，默认为1，这里设为2
-set autoread                                                        " 当文件在外部被修改时自动更新该文件
-set virtualedit=block                                               " 允许可视列块模式的虚拟编辑
-set nrformats=                                                      " 关闭八进制
-set list                                                            " 显示特殊字符，其中Tab使用高亮~代替，尾部空白使用高亮点号代替
+" 设置字体 Windows需要 (Linux使用的是终端字体)
+set guifont=Fira\ Code:h12:cANSI
+" 设置退格键可用
+set backspace=2
+" 设置自动缩进
+set autoindent
+" 开启新行时使用智能自动缩进
+set smartindent
+" 显示行号
+set number
+" 开启相对行号
+set relativenumber
+" 开启实时搜索功能
+set incsearch
+" 开启高亮显示结果
+set hlsearch
+" 搜索到文件两端时不重新搜索
+set nowrapscan
+" 允许在有未保存的修改时切换缓冲区
+set hidden
+" 设定文件浏览器目录为当前目录
+set autochdir
+" 选择代码折叠类型-syntax 根据语法高亮来指定折叠
+set foldmethod=syntax
+" 禁止自动折叠
+set foldlevel=100
+" 开启顶部状态栏信息，0:不显示 1:至少有两个窗口时显示 2:总是显示
+set laststatus=2
+" 命令行的高度，默认为1，这里设为2
+set cmdheight=2
+" 当文件在外部被修改时自动更新该文件
+set autoread
+" 允许可视列块模式的虚拟编辑
+set virtualedit=block
+" 关闭八进制
+set nrformats=
+" 显示特殊字符，其中Tab使用高亮~代替，尾部空白使用高亮点号代替
+set list
 set listchars=tab:\|\ ,trail:▫
-set expandtab                                                       " 将Tab自动转化成空格[需要输入真正的Tab符时，使用 Ctrl+V + Tab]
-set showmatch                                                       " 显示括号配对情况
+" 将Tab自动转化成空格[需要输入真正的Tab符时，使用 Ctrl+V + Tab]
+set expandtab
+" 显示括号配对情况,只有在屏幕上能看到匹配时才会进跳转
+set showmatch
 
 " ------ Vim美化 ------
-set termguicolors                                                   " 支持真色彩；终端下
-syntax on                                                           " 语法高亮支持
-let g:onedark_terminal_italics=1                                    " 支持斜体
-packadd! onedark                                                    " 使用onedark主题
-colorscheme onedark                                                 " 使用onedark主题
+" 支持真色彩；终端下
+set termguicolors
+" 支持斜体
+let g:gruvbox_italic=1
+" 使用gruvbox主题
+packadd! gruvbox
+" 使用gruvbox主题
+colorscheme gruvbox
+" 启用透明背景
+let g:gruvbox_transparent_bg=1
+
+" 启动界面插件-界面显示的图标
+let g:dashboard_custom_header = [
+         \'',
+         \' ██╗   ██╗██╗    ██╗  ██╗██╗ █████╗  ██████╗     ██████╗  █████╗ ██╗ ',
+         \' ╚██╗ ██╔╝██║    ╚██╗██╔╝██║██╔══██╗██╔═══██╗    ██╔══██╗██╔══██╗██║ ',
+         \'  ╚████╔╝ ██║     ╚███╔╝ ██║███████║██║   ██║    ██████╔╝███████║██║ ',
+         \'   ╚██╔╝  ██║     ██╔██╗ ██║██╔══██║██║   ██║    ██╔══██╗██╔══██║██║ ',
+         \'    ██║   ██║    ██╔╝ ██╗██║██║  ██║╚██████╔╝    ██████╔╝██║  ██║██║ ',
+         \'    ╚═╝   ╚═╝    ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝ ',
+         \ '',
+         \ ]
+" Default value is fzf.vim
+let g:dashboard_default_executive ='fzf.vim'
 
 " --------------------------------
 " 根据时间动态的切换主题背景颜色
@@ -112,30 +149,49 @@ colorscheme onedark                                                 " 使用oned
 "set background=dark                                          " 设置vim背景为深色
 
 " -------- 窗口及布局配置 ---------
-au GUIEnter * simalt ~x                                             " 启动时自动最大化窗口
-"winpos 0 0                                                         " 指定窗口出现的位置，坐标原点在屏幕左上角
-"set lines=100 columns=110                                          " 指定窗口大小，lines 为高度，columns 为宽度
-set guioptions+=c                                                   " 使用字符提示框
-set guioptions-=m                                                   " 隐藏菜单栏
-set guioptions-=T                                                   " 隐藏工具栏
-set guioptions-=L                                                   " 隐藏左侧滚动条
-set guioptions-=r                                                   " 隐藏右侧滚动条
-set guioptions-=b                                                   " 隐藏底部滚动条
-set showtabline=0                                                   " 隐藏Tab栏
-set cursorline                                                      " 高亮突出当前行
-"set cursorcolumn                                                   " 高亮突出当前列
-set shiftwidth=4                                                    " 设置通用缩进策略 [四空格缩进]
-set tabstop=4                                                       " 设置通用缩进策略 [四空格缩进]
-set softtabstop=4                                                   "
-set scrolloff=4                                                     "
-set noexpandtab                                                     "
-set ttimeoutlen=0                                                   "
+" 启动时自动最大化窗口
+au GUIEnter * simalt ~x
+"" 指定窗口出现的位置，坐标原点在屏幕左上角
+"winpos 0 0
+"" 指定窗口大小，lines 为高度，columns 为宽度
+"set lines=100 columns=110
+" 使用字符提示框
+set guioptions+=c
+" 隐藏菜单栏
+set guioptions-=m
+" 隐藏工具栏
+set guioptions-=T
+" 隐藏左侧滚动条
+set guioptions-=L
+" 隐藏右侧滚动条
+set guioptions-=r
+" 隐藏底部滚动条
+set guioptions-=b
+" 隐藏Tab栏
+set showtabline=0
+" 高亮突出当前行
+set cursorline
+" 高亮突出当前列
+"set cursorcolumn
+" 设置通用缩进策略 [四空格缩进]
+set shiftwidth=4
+" 设置通用缩进策略 [四空格缩进]
+set tabstop=4
+"
+set softtabstop=4
+"
+set scrolloff=4
+"
+set noexpandtab
+"
+set ttimeoutlen=0
 set notimeout
 set viewoptions=cursor,folds,slash,unix
 set wrap
 set tw=0
 set indentexpr=
-"set foldenable=syntax                                              " 让Vim基于语法进行折叠
+" 让Vim基于语法进行折叠
+"set foldenable=syntax
 set formatoptions-=tc
 set splitright
 set splitbelow
@@ -150,7 +206,8 @@ set ttyfast "should make scrolling faster
 set lazyredraw "same as above
 set visualbell
 set clipboard+=unnamedplus
-autocmd FilterWritePre * if &diff | setlocal wrap< | endif      " 使用 vimdiff 时，长行自动换行
+" 使用 vimdiff 时，长行自动换行
+autocmd FilterWritePre * if &diff | setlocal wrap< | endif      
 
 " 打开文件时自动到文件最后的行
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -686,9 +743,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 " 启用默认样式
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-" 配置样式
-let g:airline_theme='onedark'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+
 
 let g:airline#extensions#keymap#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
@@ -719,7 +775,7 @@ nmap <LEADER>- <Plug>AirlineSelectPrevTab
 " 设置切换tab的快捷键 <,> + <+> 切换到后一个 tab
 nmap <LEADER>+ <Plug>AirlineSelectNextTab
 " 设置切换tab的快捷键 <,> + <q> 退出当前的 tab
-nmap <LEADER>q :bp<cr>:bd #<cr>
+nmap <LEADER>q :bp<CR>:bd #<CR>
 " 修改了一些个人不喜欢的字符
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -731,6 +787,7 @@ let g:airline_symbols.branch = 'BR'
 let g:airline_symbols.readonly = "RO"
 let g:airline_symbols.dirty = "DT"
 let g:airline_symbols.crypt = "CR"
+
 
 " ----------------     Markdown 文档插件的配置      ----------------------------
 " set to 1, nvim will open the preview window after entering the markdown buffer
@@ -1006,12 +1063,14 @@ call plug#begin()
 
 " ------------------------------ 美化 ------------------------------ 
 "启动vim或nvim你将看到一个酷酷的启动界面
-Plug 'mhinz/vim-startify'
+"Plug 'mhinz/vim-startify'
+" 启动界面插件
+Plug 'glepnir/dashboard-nvim'
 " ----- 底部状态栏 -----
 " 航空公司
 Plug 'vim-airline/vim-airline'
 " 航空公司的主题
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline-themes'
 " gruvbox 主题
 Plug 'morhetz/gruvbox'
 
@@ -1086,6 +1145,8 @@ Plug 'jiangmiao/auto-pairs'
 " LaTeX文件工具
 "Plug 'honza/vim-snippets'
 
+" 多光标插件
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 "-----------------------------------
 " 自动选中括号内的文本
 Plug 'gcmt/wildfire.vim'
