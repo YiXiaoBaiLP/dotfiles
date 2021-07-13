@@ -30,13 +30,18 @@ else
     let g:isGUI = 0
 endif
 
-" 第一次使用nvim时自动加载插件
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-   		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" 自动加载vim-plug插件，如果没有安装的情况下
+if has(g:isLinux == 1)
+	if empty(glob('~/.config/nvim/autoload/plug.vim'))
+		silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
+elseif has(g:isWIN == 1)
+	if empty(glob('C:\\Users\\admin\\AppData\\Local\\nvim\\autoload'))
+		silent !curl -fLo 'C:\\Users\\admin\\AppData\\Local\\nvim\\autoload\\plug.vim' --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
 endif
-
 
 " #######################################   基本设置   ######################################
 
