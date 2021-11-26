@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.14.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Wed Jan 27 11:16:39 2021"
+  modified_time: "Thu Oct 21 15:42:17 2021"
   rime_version: 1.5.3
 patch:
   "key_binder/bindings":
@@ -11,5 +11,7 @@ patch:
   schema_list:
     - {schema: clover}
     - {schema: wubi86}
+    - {schema: wubi98}
+    - {schema: luna_pinyin_simp}
   "switcher/hotkeys":
     - "Control+grave"
