@@ -1,6 +1,0 @@
-# Rime user dictionary
-#@/db_name	stroke.userdb
-#@/db_type	userdb
-#@/rime_version	1.5.3
-#@/tick	0
-#@/user_id	51e25a0a-ac6c-40dd-89cd-561e9e93526d
