@@ -10,7 +10,6 @@ patch:
   "menu/page_size": 7
   schema_list:
     - {schema: clover}
-    - {schema: wubi86}
     - {schema: wubi98}
     - {schema: luna_pinyin_simp}
   "switcher/hotkeys":
