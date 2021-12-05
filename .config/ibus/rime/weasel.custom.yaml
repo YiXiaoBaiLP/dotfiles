@@ -1,0 +1,22 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Nov 25 15:47:21 2021"
+  rime_version: 1.5.3
+patch:
+  ascii_mode: true
+  "preset_color_schemes/google/border_color": 0xce7539
+  "style/color_scheme": google
+  "style/display_tray_icon": false
+  "style/font_point": 13
+  "style/horizontal": false
+  "style/inline_preedit": true
+  "style/layout/border": 0
+  "style/layout/candidate_spacing": 10
+  "style/layout/hilite_padding": 2
+  "style/layout/margin_x": 5
+  "style/layout/margin_y": 5
+  "style/layout/min_width": 60
+  "style/layout/round_corner": 15
+  us_keyboard_layout: true
