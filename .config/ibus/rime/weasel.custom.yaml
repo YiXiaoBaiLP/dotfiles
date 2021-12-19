@@ -11,7 +11,7 @@ patch:
   "style/display_tray_icon": false
   "style/font_point": 13
   "style/horizontal": false
-  "style/inline_preedit": true
+  "style/inline_preedit": false
   "style/layout/border": 0
   "style/layout/candidate_spacing": 10
   "style/layout/hilite_padding": 2
