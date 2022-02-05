@@ -1,323 +1,96 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
-# Import additional configuration files
-#
-# These configuration files will be loaded in order, replacing values in files
-# loaded earlier with those loaded later in the chain. The file itself will
-# always be loaded last.
-import:
-  #- /path/to/alacritty.yml
-  - /home/yixiaobai/.config/alacritty/themes/dracula/dracula.yml
-
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
-env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  TERM: xterm-256color
-
-#window:
-  # Window dimensions (changes require restart)
-  #
-  # Number of lines/columns (not pixels) in the terminal. The number of columns
-  # must be at least `2`, while using a value of `0` for columns and lines will
-  # fall back to the window manager's recommended size.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
-
-# 窗口启动大小
+# 窗口配置
 window:
+  # 窗口大小
   dimensions:
-    columns: 110
-    lines: 42
-  # 窗口启动位置
+    columns: 100
+    lines: 50
+  # 窗口位置
   position:
-    x: 400
-    y: 150
+    x: 0
+    y: 0
   # 窗口边框
   padding:
     x: 2
     y: 2
-  # Window position (changes require restart)
-  #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
 
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  # 窗口透明度
+  opacity: 0.7
 
-  # Spread additional padding evenly around the terminal content.
-  # 在终端内容周围平均分配其他填充
-  dynamic_padding: true
+  # 启动窗口最大化
+  startup_mode: Maximized
 
-  # Window decorations
-  # 窗口边框
-  # full(边框和标题栏) 或者 none（没有边框）
-  decorations: full
-
-  # Startup Mode (changes require restart)
-  # 窗口启动模式
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   默认值
-  #   - Maximized
-  #   窗口最大化
-  #   - Fullscreen
-  #   屏幕最大化
-  startup_mode: Windowed
-
-  # Window title
-  # 窗口标题
-  title: Alacritty
-
-  # Allow terminal applications to change Alacritty's window title.
-  # 允许终端应用程序更改Alacritty的窗口标题
-  dynamic_title: true
-
-  # Window class (Linux/BSD only):
-  # 窗口类型
-  class:
-    # Application instance name
-    # 应用程序名称
-    instance: Alacritty
-    # General application class
-    # 通用应用程序类
-    general: Alacritty
-
-  # GTK theme variant (Linux/BSD only)
-  # GTK 主题配置 
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark`
-  # and `light`. Set this to `None` to use the default theme variant.
-  #  主题配置默认值：无
-  gtk_theme_variant: None
-
-# 滚动
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  # 显示历史记录,0将禁用
+  # 滚动缓冲区的行数
   history: 100000
 
-  # Scrolling distance multiplier.
-  # 每次滚动的距离
+  # 每次滚动的行数
   multiplier: 7
 
 # Font configuration
-# 字体配置
 font:
-  # Normal (roman) font face
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: hack
-
-    # The `style` can be specified to pick a specific face.
+    family: FiraCode Nerd Font
     style: Regular
 
   # Bold font face
   bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: hack
-
-    # The `style` can be specified to pick a specific face.
+    family: FiraCode Nerd Font
     style: Bold
 
   # Italic font face
   italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: hack
-
-    # The `style` can be specified to pick a specific face.
+    family: FiraCode Nerd Font
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: hack
-
-    # The `style` can be specified to pick a specific face.
+    family: FiraCode Nerd Font
     style: Bold Italic
 
   # Point size
-  # 字体大小
-  size: 13
-
-  # Offset is the extra space around each character. `offset.y` can be thought
-  # of as modifying the line spacing, and `offset.x` as modifying the letter
-  # spacing.
-  # 偏移量是每个字符周围的多余空间。可以认为`offset.y`
-  # 表示修改行距，而`offset.x`表示修改字母
-  # 间距。
-  offset:
-    x: 0
-    y: 0
-
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the
-  # right, increasing `y` moves the glyph upward.
-  # 字形偏移量确定字形在其单元格中的位置
-  # 默认值位于底部。 x的增加将字形移至
-  # 正确，增加y可使字形向上移动。
-  glyph_offset:
-    x: 0
-    y: 0
-
-# If `true`, bold text is drawn using the bright color variants.
-# 如果为’是’，则使用明亮颜色体绘粗体文本。
-draw_bold_text_with_bright_colors: true
+  size: 13.0
 
 # Colors (Tomorrow Night)
-# 颜色配置
-#colors:
-#  # Default colors
-#  primary:
-#    # 背景
-#    background: '#1d1f21'
-#    # 前景
-#    foreground: '#c5c8c6'
-#
-#    # 明亮和暗淡的前景色
-#    #
-#    # 如果不是，则自动计算变暗的前景色
-#    # 当下。如果未设置明亮的前景色，或者
-#    # draw_bold_text_with_bright_colors是false，是正常的前景
-#    # 将使用颜色。
-#    dim_foreground: '#828482'
-#    bright_foreground: '#eaeaea'
-#
-#  # 光标颜色
-#  #
-#  # 用来绘制终端光标的颜色。
-#  #
-#  # 允许的值为CellForeground和CellBackground，它们引用了
-#  # 受影响的单元格或十六进制颜色（如＃ff00ff）。
-#  cursor:
-#    text: CellBackground
-#    cursor: CellForeground
-#
-#  # Vi mode cursor colors
-#  #  Vi模式光标颜色
-#  
-#  # vi模式处于活动状态时，光标的颜色。
-#  #
-#  # 允许的值为CellForeground和CellBackground，它们引用了
-#  # 受影响的单元格或十六进制颜色（如＃ff00ff）。
-#  vi_mode_cursor:
-#    text: CellBackground
-#    cursor: CellForeground
-#
-#  # 选择颜色
-#  #
-#  # 用来绘制选择区域的颜色。
-#  # 允许的值为CellForeground和CellBackground，它们引用了
-#  # 受影响的单元格或十六进制颜色（如＃ff00ff）。
-#  selection:
-#    text: CellBackground
-#    background: CellForeground
-#
-#  # Search colors
-#  # 搜索颜色
-#  #
-#  # Colors used for the search bar and match highlighting.
-#  # 搜索栏和匹配突出显示所使用的颜色
-#  search:
-#    # Allowed values are CellForeground and CellBackground, which reference the
-#    # 允许的值为CellForeground和CellBackground，它们引用了
-#    # affected cell, or hexadecimal colors like #ff00ff.
-#    # 受影响的单元格或十六进制颜色（如＃ff00ff）。
-#    matches:
-#      foreground: '#000000'
-#      background: '#ffffff'
-#    focused_match:
-#      foreground: CellBackground
-#      background: CellForeground
-#    bar:
-#      background: '#c5c8c6'
-#      foreground: '#1d1f21'
-#
-#  # Normal colors
-#  # 正常模式的颜色
-#  normal:
-#    black:   '#1d1f21'
-#    red:     '#cc6666'
-#    green:   '#b5bd68'
-#    yellow:  '#f0c674'
-#    blue:    '#81a2be'
-#    magenta: '#b294bb'
-#    cyan:    '#8abeb7'
-#    white:   '#c5c8c6'
-#
-#  # Bright colors
-#  # 亮色模式
-#  bright:
-#    black:   '#666666'
-#    red:     '#d54e53'
-#    green:   '#b9ca4a'
-#    yellow:  '#e7c547'
-#    blue:    '#7aa6da'
-#    magenta: '#c397d8'
-#    cyan:    '#70c0b1'
-#    white:   '#eaeaea'
-#
-#  # Dim colors
-#  #
-#  # If the dim colors are not set, they will be calculated automatically based
-#  # on the `normal` colors.
-#  # 暗淡模式
-#  dim:
-#    black:   '#131415'
-#    red:     '#864343'
-#    green:   '#777c44'
-#    yellow:  '#9e824c'
-#    blue:    '#556a7d'
-#    magenta: '#75617b'
-#    cyan:    '#5b7d78'
-#    white:   '#828482'
-#
-#  # Indexed Colors
-#  #
-#  # The indexed colors include all colors from 16 to 256.
-#  # When these are not set, they're filled with sensible defaults.
-#  #
-#  # Example:
-#  #   `- { index: 16, color: '#ff00ff' }`
-#  #
-#  # 索引颜色
-#  # 默认的颜色配置
-#  indexed_colors: []
-#
-# Bell
-#
-# The bell is rung every time the BEL control character is received.
+# onedarkpro.nvim - onelight
+colors:
+  primary:
+    background: "#fafafa"
+    foreground: "#6a6a6a"
+
+  normal:
+    black: "#6a6a6a"
+    red: "#e05661"
+    green: "#1da912"
+    yellow: "#eea825"
+    blue: "#118dc3"
+    magenta: "#9a77cf"
+    cyan: "#56B6C2"
+    white: "#fafafa"
+  
+  bright:
+    black: "#5f5f5f"
+    red: "#e05661"
+    green: "#1da912"
+    yellow: "#eea825"
+    blue: "#118dc3"
+    magenta: "#9a77cf"
+    cyan: "#56B6C2"
+    white: "#fcfcfc"
+
+  cursor:
+    text: CellBackground
+    cursor: CellForeground # syntax-cursor-color
+
+  # Vi mode cursor colors
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+  selection:
+    text: CellForeground
+    background: "#bfceff" # syntax-selection-color
+
+# 终端响铃
 bell:
   # Visual Bell Animation
   #
@@ -332,166 +105,45 @@ bell:
   #   - EaseOutQuart
   #   - EaseOutQuint
   #   - EaseOutExpo
-  #   - EaseOutCirc
-  #   - Linear
+  #   - EaseOutCirc - Linear
   animation: Linear
 
-  # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
-  # disable the visual bell animation.
-  duration: 0
+  # 动画显示的毫秒数
+  duration: 7
 
-  # Visual bell animation color.
-  # 可视铃声动画颜色
-  color: '#ffffff'
-
-  # Bell Command
-  #
-  # This program is executed whenever the bell is rung.
-  #
-  # When set to `command: None`, no command will be executed.
-  #
-  # Example:
-  #   command:
-  #     program: notify-send
-  #     args: ["Hello, World!"]
-  #
-  command: None
-
-#  背景透明度配置
-bakground_opacity: 0.7
+  # 动画显示的颜色
+  color: '#ff0000'
 
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
-  #  此字符串包含用作分隔符的所有字符
-  #  Alacritty中的“语义词”。
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  # 设置为“ true”时，所选文本将被复制到主剪贴板。
-  save_to_clipboard: true
+  # 复制到剪贴板
+  save_to_clipboard: false
 
-# 光标样式
+# 光标配置
 cursor:
-  # Cursor style
-  #
-  # Values for `style`:
-  #   - ▇ Block
-  #   - _ Underline
-  #   - | Beam
-  style: Beam
+  # 光标样式
+  style:
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
 
-  # Vi mode cursor style
-  # vi 光标样式
-  #
-  # If the vi mode cursor style is `None` or not specified, it will fall back to
-  # the style of the active value of the normal cursor.
-  #
-  # See `cursor.style` for available options.
-  #vi_mode_style: None
+    # Cursor blinking state
+    # 光标闪烁
+    # Values for `blinking`:
+    #   - Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: Always
 
-  # If this is `true`, the cursor will be rendered as a hollow box when the
-  # window is not focused.
-  #unfocused_hollow: true
-
-  # Thickness of the cursor relative to the cell width as floating point number
-  # from `0.0` to `1.0`.
-  #thickness: 0.15
-
-# Live config reload (changes require restart)
-# 实时加载配置文件
+# 实时加载配置
 live_config_reload: true
-
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g.
-# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
-# shell.
-#
-# Default:
-#   - (macOS) /bin/bash --login
-#   - (Linux/BSD) user login shell
-#   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
-
-# Startup directory
-# 启动目录
-#
-# Directory the shell is started in. If this is unset, or `None`, the working
-# directory of the parent process will be used.
-working_directory: None
-
-# Send ESC (\x1b) before characters when alt is pressed.
-# 在按下alt时，在字符前发送ESC(\x1b)
-alt_send_esc: true
-
-# 鼠标设置
-mouse:
-  # Click settings
-  #
-  # The `double_click` and `triple_click` settings control the time
-  # alacritty should wait for accepting multiple clicks as one double
-  # or triple click.
-  #  “double_click”和“triple_click”设置控制时间
-  # Alacritty应该等待接受多次点击为两次或单击三次
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
-
-  # If this is `true`, the cursor is temporarily hidden when typing.
-  # 如果设为“true”，则在输入时临时隐藏光标
-  hide_when_typing: false
-
-  url:
-    # URL launcher
-    #
-    # This program is executed when clicking on a text which is recognized as a
-    # URL. The URL is always added to the command as the last parameter.
-    #
-    # When set to `launcher: None`, URL launching will be disabled completely.
-    #
-    # Default:
-    #   - (macOS) open
-    #   - (Linux/BSD) xdg-open
-    #   - (Windows) explorer
-    launcher:
-      program: chromium
-      args: []
-
-    # URL modifiers
-    #
-    # These are the modifiers that need to be held down for opening URLs when
-    # clicking on them. The available modifiers are documented in the key
-    # binding section.
-    modifiers: alt
-
-# Mouse bindings
-#
-# Mouse bindings are specified as a list of objects, much like the key
-# bindings further below.
-#
-# To trigger mouse bindings when an application running within Alacritty
-# captures the mouse, the `Shift` modifier is automatically added as a
-# requirement.
-#
-# Each mouse binding will specify a:
-#
-# - `mouse`:
-#
-#   - Middle
-#   - Left
-#   - Right
-#   - Numeric identifier such as `5`
-#
-# - `action` (see key bindings)
-#
-# And optionally:
-#
-# - `mods` (see key bindings)
-#mouse_bindings:
-#  - { mouse: Middle, action: PasteSelection }
 
 # Key bindings
 #
@@ -570,8 +222,8 @@ mouse:
 # - Vi mode exclusive actions:
 #
 #   - Open
-#       Open URLs at the cursor location with the launcher configured in
-#       `url.launcher`.
+#       Perform the action of the first matching hint under the vi mode cursor
+#       with `mouse.enabled` set to `true`.
 #   - ToggleNormalSelection
 #   - ToggleLineSelection
 #   - ToggleBlockSelection
@@ -628,6 +280,22 @@ mouse:
 #   - SearchEnd
 #       End of the match to the right of the vi mode cursor.
 #
+# - Search mode exclusive actions:
+#   - SearchFocusNext
+#       Move the focus to the next search match.
+#   - SearchFocusPrevious
+#       Move the focus to the previous search match.
+#   - SearchConfirm
+#   - SearchCancel
+#   - SearchClear
+#       Reset the search regex.
+#   - SearchDeleteWord
+#       Delete the last word in the search regex.
+#   - SearchHistoryPrevious
+#       Go to the previous regex in the search history.
+#   - SearchHistoryNext
+#       Go to the next regex in the search history.
+#
 # - macOS exclusive actions:
 #   - ToggleSimpleFullscreen
 #       Enter fullscreen without occupying another space.
@@ -667,6 +335,7 @@ mouse:
 #
 #    - AppCursor
 #    - AppKeypad
+#    - Search
 #    - Alt
 #    - Vi
 #
@@ -680,106 +349,116 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-key_bindings:
-  - { key: Paste,                                action: Paste          }
-  - { key: Copy,                                 action: Copy           }
-  - { key: L,         mods: Control,             action: ClearLogNotice }
-  - { key: L,         mods: Control, mode: ~Vi,  chars: "\x0c"          }
-  - { key: PageUp,    mods: Shift,   mode: ~Alt, action: ScrollPageUp,  }
-  - { key: PageDown,  mods: Shift,   mode: ~Alt, action: ScrollPageDown }
-  - { key: Home,      mods: Shift,   mode: ~Alt, action: ScrollToTop,   }
-  - { key: End,       mods: Shift,   mode: ~Alt, action: ScrollToBottom }
+#key_bindings:
+  #- { key: Paste,                                       action: Paste          }
+  #- { key: Copy,                                        action: Copy           }
+  #- { key: L,         mods: Control,                    action: ClearLogNotice }
+  #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
+  #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
+  #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
+  #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
+  #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
   # Vi Mode
-  #- { key: Space,  mods: Shift|Control, mode: Vi, action: ScrollToBottom          }
-  #- { key: Space,  mods: Shift|Control,           action: ToggleViMode            }
-  #- { key: Escape,                      mode: Vi, action: ClearSelection          }
-  #- { key: I,                           mode: Vi, action: ScrollToBottom          }
-  #- { key: I,                           mode: Vi, action: ToggleViMode            }
-  #- { key: C,      mods: Control,       mode: Vi, action: ToggleViMode            }
-  #- { key: Y,      mods: Control,       mode: Vi, action: ScrollLineUp            }
-  #- { key: E,      mods: Control,       mode: Vi, action: ScrollLineDown          }
-  #- { key: G,                           mode: Vi, action: ScrollToTop             }
-  #- { key: G,      mods: Shift,         mode: Vi, action: ScrollToBottom          }
-  #- { key: B,      mods: Control,       mode: Vi, action: ScrollPageUp            }
-  #- { key: F,      mods: Control,       mode: Vi, action: ScrollPageDown          }
-  #- { key: U,      mods: Control,       mode: Vi, action: ScrollHalfPageUp        }
-  #- { key: D,      mods: Control,       mode: Vi, action: ScrollHalfPageDown      }
-  #- { key: Y,                           mode: Vi, action: Copy                    }
-  #- { key: Y,                           mode: Vi, action: ClearSelection          }
-  #- { key: Copy,                        mode: Vi, action: ClearSelection          }
-  #- { key: V,                           mode: Vi, action: ToggleNormalSelection   }
-  #- { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
-  #- { key: V,      mods: Control,       mode: Vi, action: ToggleBlockSelection    }
-  #- { key: V,      mods: Alt,           mode: Vi, action: ToggleSemanticSelection }
-  #- { key: Return,                      mode: Vi, action: Open                    }
-  #- { key: K,                           mode: Vi, action: Up                      }
-  #- { key: J,                           mode: Vi, action: Down                    }
-  #- { key: H,                           mode: Vi, action: Left                    }
-  #- { key: L,                           mode: Vi, action: Right                   }
-  #- { key: Up,                          mode: Vi, action: Up                      }
-  #- { key: Down,                        mode: Vi, action: Down                    }
-  #- { key: Left,                        mode: Vi, action: Left                    }
-  #- { key: Right,                       mode: Vi, action: Right                   }
-  #- { key: Key0,                        mode: Vi, action: First                   }
-  #- { key: Key4,   mods: Shift,         mode: Vi, action: Last                    }
-  #- { key: Key6,   mods: Shift,         mode: Vi, action: FirstOccupied           }
-  #- { key: H,      mods: Shift,         mode: Vi, action: High                    }
-  #- { key: M,      mods: Shift,         mode: Vi, action: Middle                  }
-  #- { key: L,      mods: Shift,         mode: Vi, action: Low                     }
-  #- { key: B,                           mode: Vi, action: SemanticLeft            }
-  #- { key: W,                           mode: Vi, action: SemanticRight           }
-  #- { key: E,                           mode: Vi, action: SemanticRightEnd        }
-  #- { key: B,      mods: Shift,         mode: Vi, action: WordLeft                }
-  #- { key: W,      mods: Shift,         mode: Vi, action: WordRight               }
-  #- { key: E,      mods: Shift,         mode: Vi, action: WordRightEnd            }
-  #- { key: Key5,   mods: Shift,         mode: Vi, action: Bracket                 }
-  #- { key: Slash,                       mode: Vi, action: SearchForward           }
-  #- { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
-  #- { key: N,                           mode: Vi, action: SearchNext              }
-  #- { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
+  #- { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            }
+  #- { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
+  #- { key: Escape,                      mode: Vi|~Search, action: ClearSelection          }
+  #- { key: I,                           mode: Vi|~Search, action: ToggleViMode            }
+  #- { key: I,                           mode: Vi|~Search, action: ScrollToBottom          }
+  #- { key: C,      mods: Control,       mode: Vi|~Search, action: ToggleViMode            }
+  #- { key: Y,      mods: Control,       mode: Vi|~Search, action: ScrollLineUp            }
+  #- { key: E,      mods: Control,       mode: Vi|~Search, action: ScrollLineDown          }
+  #- { key: G,                           mode: Vi|~Search, action: ScrollToTop             }
+  #- { key: G,      mods: Shift,         mode: Vi|~Search, action: ScrollToBottom          }
+  #- { key: B,      mods: Control,       mode: Vi|~Search, action: ScrollPageUp            }
+  #- { key: F,      mods: Control,       mode: Vi|~Search, action: ScrollPageDown          }
+  #- { key: U,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageUp        }
+  #- { key: D,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageDown      }
+  #- { key: Y,                           mode: Vi|~Search, action: Copy                    }
+  #- { key: Y,                           mode: Vi|~Search, action: ClearSelection          }
+  #- { key: Copy,                        mode: Vi|~Search, action: ClearSelection          }
+  #- { key: V,                           mode: Vi|~Search, action: ToggleNormalSelection   }
+  #- { key: V,      mods: Shift,         mode: Vi|~Search, action: ToggleLineSelection     }
+  #- { key: V,      mods: Control,       mode: Vi|~Search, action: ToggleBlockSelection    }
+  #- { key: V,      mods: Alt,           mode: Vi|~Search, action: ToggleSemanticSelection }
+  #- { key: Return,                      mode: Vi|~Search, action: Open                    }
+  #- { key: K,                           mode: Vi|~Search, action: Up                      }
+  #- { key: J,                           mode: Vi|~Search, action: Down                    }
+  #- { key: H,                           mode: Vi|~Search, action: Left                    }
+  #- { key: L,                           mode: Vi|~Search, action: Right                   }
+  #- { key: Up,                          mode: Vi|~Search, action: Up                      }
+  #- { key: Down,                        mode: Vi|~Search, action: Down                    }
+  #- { key: Left,                        mode: Vi|~Search, action: Left                    }
+  #- { key: Right,                       mode: Vi|~Search, action: Right                   }
+  #- { key: Key0,                        mode: Vi|~Search, action: First                   }
+  #- { key: Key4,   mods: Shift,         mode: Vi|~Search, action: Last                    }
+  #- { key: Key6,   mods: Shift,         mode: Vi|~Search, action: FirstOccupied           }
+  #- { key: H,      mods: Shift,         mode: Vi|~Search, action: High                    }
+  #- { key: M,      mods: Shift,         mode: Vi|~Search, action: Middle                  }
+  #- { key: L,      mods: Shift,         mode: Vi|~Search, action: Low                     }
+  #- { key: B,                           mode: Vi|~Search, action: SemanticLeft            }
+  #- { key: W,                           mode: Vi|~Search, action: SemanticRight           }
+  #- { key: E,                           mode: Vi|~Search, action: SemanticRightEnd        }
+  #- { key: B,      mods: Shift,         mode: Vi|~Search, action: WordLeft                }
+  #- { key: W,      mods: Shift,         mode: Vi|~Search, action: WordRight               }
+  #- { key: E,      mods: Shift,         mode: Vi|~Search, action: WordRightEnd            }
+  #- { key: Key5,   mods: Shift,         mode: Vi|~Search, action: Bracket                 }
+  #- { key: Slash,                       mode: Vi|~Search, action: SearchForward           }
+  #- { key: Slash,  mods: Shift,         mode: Vi|~Search, action: SearchBackward          }
+  #- { key: N,                           mode: Vi|~Search, action: SearchNext              }
+  #- { key: N,      mods: Shift,         mode: Vi|~Search, action: SearchPrevious          }
+
+  # Search Mode
+  #- { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
+  #- { key: Escape,                mode: Search,     action: SearchCancel          }
+  #- { key: C,      mods: Control, mode: Search,     action: SearchCancel          }
+  #- { key: U,      mods: Control, mode: Search,     action: SearchClear           }
+  #- { key: W,      mods: Control, mode: Search,     action: SearchDeleteWord      }
+  #- { key: P,      mods: Control, mode: Search,     action: SearchHistoryPrevious }
+  #- { key: N,      mods: Control, mode: Search,     action: SearchHistoryNext     }
+  #- { key: Up,                    mode: Search,     action: SearchHistoryPrevious }
+  #- { key: Down,                  mode: Search,     action: SearchHistoryNext     }
+  #- { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
+  #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (Windows, Linux, and BSD only)
-  # C+S+V : 粘贴
-  - { key: V,              mods: Control|Shift,           action: Paste            }
-  # C+S+C : 复制
-  - { key: C,              mods: Control|Shift,           action: Copy             }
-  # C+S+F ：查找
-  - { key: F,              mods: Control|Shift,           action: SearchForward    }
-  # C+S+B ：反向查找
-  - { key: B,              mods: Control|Shift,           action: SearchBackward   }
-  - { key: C,              mods: Control|Shift, mode: Vi, action: ClearSelection   }
-  - { key: Insert,         mods: Shift,                   action: PasteSelection   }
-  - { key: Key0,           mods: Control,                 action: ResetFontSize    }
-  - { key: Equals,         mods: Control,                 action: IncreaseFontSize }
-  - { key: Plus,           mods: Control,                 action: IncreaseFontSize }
-  - { key: NumpadAdd,      mods: Control,                 action: IncreaseFontSize }
-  - { key: Minus,          mods: Control,                 action: DecreaseFontSize }
-  - { key: NumpadSubtract, mods: Control,                 action: DecreaseFontSize }
+  #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  #- { key: C,              mods: Control|Shift,                   action: Copy             }
+  #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
+  #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
+  #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
+  #- { key: Key0,           mods: Control,                         action: ResetFontSize    }
+  #- { key: Equals,         mods: Control,                         action: IncreaseFontSize }
+  #- { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
+  #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+  #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
 
   # (macOS only)
-  #- { key: K,              mods: Command, mode: ~Vi, chars: "\x0c"            }
-  #- { key: Key0,           mods: Command,            action: ResetFontSize    }
-  #- { key: Equals,         mods: Command,            action: IncreaseFontSize }
-  #- { key: Plus,           mods: Command,            action: IncreaseFontSize }
-  #- { key: NumpadAdd,      mods: Command,            action: IncreaseFontSize }
-  #- { key: Minus,          mods: Command,            action: DecreaseFontSize }
-  #- { key: NumpadSubtract, mods: Command,            action: DecreaseFontSize }
-  #- { key: K,              mods: Command,            action: ClearHistory     }
-  #- { key: V,              mods: Command,            action: Paste            }
-  #- { key: C,              mods: Command,            action: Copy             }
-  #- { key: C,              mods: Command, mode: Vi,  action: ClearSelection   }
-  #- { key: H,              mods: Command,            action: Hide             }
-  #- { key: M,              mods: Command,            action: Minimize         }
-  #- { key: Q,              mods: Command,            action: Quit             }
-  #- { key: W,              mods: Command,            action: Quit             }
-  #- { key: N,              mods: Command,            action: SpawnNewInstance }
-  #- { key: F,              mods: Command|Control,    action: ToggleFullscreen }
-  #- { key: F,              mods: Command,            action: SearchForward    }
-  #- { key: B,              mods: Command,            action: SearchBackward   }
+  #- { key: K,              mods: Command, mode: ~Vi|~Search, chars: "\x0c"                 }
+  #- { key: K,              mods: Command, mode: ~Vi|~Search, action: ClearHistory          }
+  #- { key: Key0,           mods: Command,                    action: ResetFontSize         }
+  #- { key: Equals,         mods: Command,                    action: IncreaseFontSize      }
+  #- { key: Plus,           mods: Command,                    action: IncreaseFontSize      }
+  #- { key: NumpadAdd,      mods: Command,                    action: IncreaseFontSize      }
+  #- { key: Minus,          mods: Command,                    action: DecreaseFontSize      }
+  #- { key: NumpadSubtract, mods: Command,                    action: DecreaseFontSize      }
+  #- { key: V,              mods: Command,                    action: Paste                 }
+  #- { key: C,              mods: Command,                    action: Copy                  }
+  #- { key: C,              mods: Command, mode: Vi|~Search,  action: ClearSelection        }
+  #- { key: H,              mods: Command,                    action: Hide                  }
+  #- { key: H,              mods: Command|Alt,                action: HideOtherApplications }
+  #- { key: M,              mods: Command,                    action: Minimize              }
+  #- { key: Q,              mods: Command,                    action: Quit                  }
+  #- { key: W,              mods: Command,                    action: Quit                  }
+  #- { key: N,              mods: Command,                    action: SpawnNewInstance      }
+  #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
+  #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
+  #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
 #debug:
   # Display the time it takes to redraw each frame.
@@ -791,7 +470,7 @@ key_bindings:
   # Log level
   #
   # Values for `log_level`:
-  #   - None
+  #   - Off
   #   - Error
   #   - Warn
   #   - Info
