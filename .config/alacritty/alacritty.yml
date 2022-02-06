@@ -55,7 +55,8 @@ font:
 colors:
   primary:
     background: "#fafafa"
-    foreground: "#6a6a6a"
+      #foreground: "#6a6a6a"
+    foreground: "#000000"
 
   normal:
     black: "#6a6a6a"
