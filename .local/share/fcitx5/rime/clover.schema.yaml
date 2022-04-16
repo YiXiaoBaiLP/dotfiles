@@ -55,7 +55,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@datetime_translator  # 输入时间日期的方案  https://tieba.baidu.com/p/1923873073?red_tag=t1647137642
+    - lua_translator@date_translator  # 输入时间日期的方案  https://tieba.baidu.com/p/1923873073?red_tag=t1647137642
   filters:
     - simplifier@emoji_suggestion
     - simplifier@symbol_support
