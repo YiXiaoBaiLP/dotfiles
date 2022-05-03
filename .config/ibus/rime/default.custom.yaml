@@ -11,6 +11,5 @@ patch:
   schema_list:
     - {schema: clover}
     - {schema: wubi98}
-    - {schema: luna_pinyin_simp}
   "switcher/hotkeys":
     - "Control+grave"
