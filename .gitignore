@@ -4,3 +4,4 @@
 .local/share/fcitx5/rime/user.yaml
 .local/share/fcitx5/rime/installation.yaml
 .local/share/fcitx5/rime/build/*
+.config/ibus/rime/user.yaml
