@@ -1,0 +1,15 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Thu Oct 21 15:42:17 2021"
+  rime_version: 1.5.3
+patch:
+  "key_binder/bindings":
+    - {accept: "Control+Shift+space", toggle: full_shape, when: always}
+  "menu/page_size": 7
+  schema_list:
+    - {schema: clover}
+    - {schema: wubi98}
+  "switcher/hotkeys":
+    - "Control+grave"

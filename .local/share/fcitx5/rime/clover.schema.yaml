@@ -22,10 +22,10 @@ switches:
     reset: 0
     states: [ 简, 繁 ]
   - name: emoji_suggestion
-    reset: 0
+    reset: 1
     states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
   - name: symbol_support
-    reset: 0
+    reset: 1
     states: [ "无符", "符" ]
   - name: ascii_punct
     reset: 0
@@ -55,16 +55,14 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator  # 输入时间日期的方案  https://tieba.baidu.com/p/1923873073?red_tag=t1647137642
+    # 输入时间日期的方案  https://tieba.baidu.com/p/1923873073?red_tag=t1647137642
+    - lua_translator@date_translator
+    - lua_translator@week_translator
   filters:
     - simplifier@emoji_suggestion
     - simplifier@symbol_support
     - simplifier
     - uniquifier
-
-simplifier:
-  option_name: zh_simp_s2t
-  opencc_config: s2t.json
 
 emoji_suggestion:
   opencc_config: emoji.json
@@ -75,6 +73,10 @@ symbol_support:
   opencc_config: symbol.json
   option_name: symbol_support
   tips: all
+  
+simplifier:
+  option_name: zh_simp_s2t
+  opencc_config: s2t.json
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -101,8 +103,6 @@ speller:
     - derive/tie$/tei/                    # tei = tie
     - derive/i$/ii/                       # ii = i  # i 不小心按两下
     - derive/u$/uu/                       # ui = u  # u 不小心按两下
-    
-
 
 translator:
   dictionary: clover

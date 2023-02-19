@@ -1,0 +1,358 @@
+# Rime user dictionary
+#@/db_name	wubi98.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	283
+#@/user_id	24769514-98c0-4d1f-9fa1-759af48b6715
+a 	工	c=4 d=2.99021 t=261
+aaa 	工	c=1 d=1 t=89
+aaaa 	工	c=1 d=1 t=14
+b 	了	c=3 d=2.67911 t=280
+bbbb 	子	c=2 d=1.66034 t=109
+c 	以	c=3 d=2.64586 t=282
+cccc 	又	c=3 d=2.4537 t=136
+d 	在	c=2 d=1.86071 t=258
+dddd 	大	c=2 d=1.70117 t=87
+dfa 	奔	c=1 d=1 t=34
+dgkf 	厨	c=2 d=1.99501 t=196
+e 	有	c=3 d=2.47471 t=269
+eee 	月	c=1 d=1 t=99
+eeee 	月	c=2 d=1.68729 t=80
+eeqg 	鹏	c=8 d=7.27471 t=178
+f 	地	c=2 d=1.86936 t=257
+fa 	域	c=1 d=1 t=30
+fas 	栽	c=1 d=1 t=29
+ffff 	土	c=2 d=1.70822 t=86
+fghy 	雨	c=1 d=1 t=197
+fj 	刊	c=1 d=1 t=72
+fl 	雷	c=1 d=1 t=37
+g 	一	c=2 d=1.86071 t=260
+gb 	击	c=1 d=1 t=188
+ggg 	王	c=1 d=1 t=85
+gggg 	王	c=1 d=1 t=18
+ggll 	一	c=2 d=1.48919 t=256
+ggtt 	开玩笑	c=1 d=1 t=78
+ggtt 	规规矩矩	c=1 d=1 t=77
+h 	上	c=2 d=1.85642 t=262
+hhhh 	目	c=2 d=1.70117 t=90
+hxf 	些	c=2 d=1.99501 t=184
+i 	不	c=4 d=3.19346 t=275
+iiii 	水	c=2 d=1.625 t=104
+j 	是	c=2 d=1.85642 t=263
+ja 	晓	c=1 d=1 t=35
+je 	明	c=1 d=1 t=139
+jjjj 	日	c=2 d=1.70117 t=91
+k 	中	c=3 d=2.71712 t=264
+kkkk 	口	c=3 d=2.69269 t=93
+ksj 	喳	c=1 d=1 t=33
+kwu 	只	c=2 d=1.99501 t=199
+kwy 	叭	c=1 d=1 t=200
+l 	国	c=3 d=2.74307 t=265
+la 	羁	c=1 d=1 t=32
+llll 	田	c=3 d=2.68921 t=95
+lsak 	困惑	c=1 d=1 t=71
+m 	同	c=3 d=2.81895 t=266
+mmmm 	山	c=2 d=1.71177 t=96
+n 	民	c=3 d=2.69598 t=279
+nafa 	异域	c=1 d=1 t=83
+nafb 	异地	c=1 d=1 t=84
+nafi 	展示	c=2 d=1.99501 t=82
+nnnn 	已	c=2 d=1.66698 t=108
+o 	为	c=3 d=2.74327 t=277
+oooo 	火	c=2 d=1.62189 t=106
+p 	这	c=4 d=3.26366 t=278
+pppp 	之	c=2 d=1.62189 t=107
+q 	我	c=3 d=2.44551 t=271
+qqqq 	金	c=4 d=3.11803 t=101
+r 	的	c=3 d=2.48953 t=268
+rj 	提	c=1 d=1 t=156
+rrr 	白	c=1 d=1 t=98
+rrrr 	白	c=1 d=1 t=6
+s 	要	c=2 d=1.85214 t=259
+sb 	李	c=1 d=1 t=138
+sbje 	李明	c=1 d=1 t=144
+sd 	顶	c=1 d=1 t=36
+ssss 	木	c=2 d=1.6942 t=88
+t 	和	c=3 d=2.5045 t=267
+ttt 	禾	c=1 d=1 t=97
+tttt 	禾	c=1 d=1 t=7
+u 	产	c=4 d=3.46595 t=274
+uuuu 	立	c=2 d=1.625 t=103
+v 	发	c=3 d=2.6624 t=281
+vvvv 	女	c=2 d=1.65377 t=110
+w 	人	c=3 d=2.46003 t=270
+wgkb 	命	c=2 d=1.99501 t=186
+wk 	保	c=1 d=1 t=187
+wwww 	人	c=3 d=2.22835 t=100
+x 	经	c=3 d=2.62948 t=283
+xnng 	纟	c=4 d=3.97017 t=254
+xxxx 	幺	c=2 d=1.64082 t=112
+y 	主	c=4 d=3.19723 t=272
+yg 	证	c=1 d=1 t=155
+yj 	刘	c=6 d=5.57467 t=177
+yyyy 	言	c=2 d=1.625 t=102
+encaahh 	工上	c=0 d=0.1 t=262
+encaass 	工木	c=0 d=0.1 t=15
+encaasv 	工要	c=0 d=0.1 t=227
+encahjg 	工上是	c=0 d=0.1 t=263
+encahjk 	工上是中	c=0 d=0.1 t=264
+encasdd 	工木大	c=0 d=0.1 t=16
+encasdf 	工木大土	c=0 d=0.1 t=17
+encasdf 	工要在地	c=0 d=0.1 t=229
+encasdh 	工要在	c=0 d=0.1 t=228
+encbbnn 	子已	c=0 d=0.1 t=27
+encbbvv 	子女	c=0 d=0.1 t=110
+encbnmg 	了民同	c=0 d=0.1 t=250
+encbnmm 	子已山	c=0 d=0.1 t=28
+encbnna 	了民	c=0 d=0.1 t=249
+encbnnt 	了发	c=0 d=0.1 t=281
+encbnnx 	了发以经	c=0 d=0.1 t=283
+encbnny 	了发以	c=0 d=0.1 t=282
+encbvcc 	子女又	c=0 d=0.1 t=111
+encbvcx 	子女又幺	c=0 d=0.1 t=112
+encccvv 	又女	c=0 d=0.1 t=25
+encccxx 	又幺	c=0 d=0.1 t=112
+enccvbb 	又女子	c=0 d=0.1 t=26
+enccvbn 	又女子已	c=0 d=0.1 t=27
+enccxgg 	又幺一	c=0 d=0.1 t=113
+encddff 	大土	c=0 d=0.1 t=17
+encddfg 	厨厨雨	c=0 d=0.1 t=197
+encddfk 	厨厨雨只	c=0 d=0.1 t=198
+encddss 	大木	c=0 d=0.1 t=88
+encderq 	有的	c=0 d=0.1 t=214
+encdeww 	有人	c=0 d=0.1 t=270
+encdfgg 	在地一	c=0 d=0.1 t=230
+encdfgg 	大土王	c=0 d=0.1 t=18
+encdfgh 	在地一上	c=0 d=0.1 t=231
+encdfgh 	大土王目	c=0 d=0.1 t=19
+encdfkk 	厨雨只只	c=0 d=0.1 t=199
+encdfkw 	厨雨只	c=0 d=0.1 t=198
+encdgdg 	厨厨	c=0 d=0.1 t=196
+encdgfg 	厨雨	c=0 d=0.1 t=197
+encdhdh 	不不	c=0 d=0.1 t=210
+encdhfb 	在地	c=0 d=0.1 t=229
+encdhsv 	在要	c=0 d=0.1 t=259
+encdhye 	不为	c=0 d=0.1 t=276
+encdrtk 	有的和	c=0 d=0.1 t=215
+encdrty 	有的和主	c=0 d=0.1 t=216
+encdsaa 	大木工	c=0 d=0.1 t=89
+encdwtr 	有人我	c=0 d=0.1 t=271
+encdwty 	有人我主	c=0 d=0.1 t=272
+encdyye 	不为为	c=0 d=0.1 t=277
+encdyyp 	不为这	c=0 d=0.1 t=220
+enceeee 	鹏鹏	c=0 d=0.1 t=146
+enceerr 	月白	c=0 d=0.1 t=6
+enceeww 	月人	c=0 d=0.1 t=100
+enceeye 	鹏鹏刘鹏	c=0 d=0.1 t=148
+enceeyj 	鹏刘	c=0 d=0.1 t=147
+enceeyj 	鹏鹏刘	c=0 d=0.1 t=147
+encertt 	月白禾	c=0 d=0.1 t=7
+encerty 	月白禾言	c=0 d=0.1 t=8
+encewqq 	月人金	c=0 d=0.1 t=101
+enceyee 	鹏刘鹏	c=0 d=0.1 t=170
+encfbdh 	地在	c=0 d=0.1 t=258
+encfbgg 	地一	c=0 d=0.1 t=230
+encfdsa 	土大木工	c=0 d=0.1 t=89
+encfdss 	土大木	c=0 d=0.1 t=88
+encfdsv 	地在要	c=0 d=0.1 t=259
+encffdd 	土大	c=0 d=0.1 t=87
+encffgg 	土王	c=0 d=0.1 t=18
+encffsa 	栽域顶羁喳奔晓顶雷工	c=1 d=1 t=70
+encfghh 	土王目	c=0 d=0.1 t=19
+encfghh 	地一上	c=0 d=0.1 t=231
+encfghj 	土王目日	c=0 d=0.1 t=20
+encfghj 	地一上是	c=0 d=0.1 t=232
+encfgkw 	雨只	c=0 d=0.1 t=198
+encfkkk 	雨只只叭	c=0 d=0.1 t=200
+encfkkw 	雨只只	c=0 d=0.1 t=199
+encgahh 	一工上	c=0 d=0.1 t=262
+encgahj 	一工上是	c=0 d=0.1 t=263
+encgfdd 	王土大	c=0 d=0.1 t=87
+encgfdh 	一地在	c=0 d=0.1 t=258
+encgfds 	一地在要	c=0 d=0.1 t=259
+encgfds 	王土大木	c=0 d=0.1 t=88
+encggaa 	一工	c=0 d=0.1 t=261
+encggfb 	一地	c=0 d=0.1 t=257
+encggff 	王土	c=0 d=0.1 t=86
+encgghh 	一上	c=0 d=0.1 t=231
+encgghh 	王目	c=0 d=0.1 t=19
+encghjg 	一上是	c=0 d=0.1 t=232
+encghjj 	王目日	c=0 d=0.1 t=20
+encghjk 	一上是中	c=0 d=0.1 t=233
+encghjk 	王目日口	c=0 d=0.1 t=21
+enchhjg 	上是	c=0 d=0.1 t=263
+enchhjj 	目日	c=0 d=0.1 t=91
+enchhwg 	些些命	c=0 d=0.1 t=185
+enchhww 	些些命命	c=0 d=0.1 t=186
+enchjkh 	上是中	c=0 d=0.1 t=264
+enchjkk 	上是中中	c=0 d=0.1 t=234
+enchjkk 	目日口	c=0 d=0.1 t=92
+enchjkk 	目日口口	c=0 d=0.1 t=93
+enchjkl 	上是中国	c=0 d=0.1 t=265
+enchjkl 	目日口田	c=0 d=0.1 t=22
+enchwwg 	些命命	c=0 d=0.1 t=186
+enchxhx 	些些	c=0 d=0.1 t=184
+enchxwg 	些命	c=0 d=0.1 t=185
+enciioo 	水火	c=0 d=0.1 t=11
+enciopp 	水火之	c=0 d=0.1 t=12
+encjgkh 	是中	c=0 d=0.1 t=264
+encjjkk 	日口	c=0 d=0.1 t=92
+encjkkh 	是中中	c=0 d=0.1 t=234
+encjkkk 	日口口	c=0 d=0.1 t=93
+encjkkl 	日口口田	c=0 d=0.1 t=94
+encjklg 	是中国	c=0 d=0.1 t=265
+encjkll 	日口田	c=0 d=0.1 t=22
+enckhkh 	中中	c=0 d=0.1 t=234
+enckhlg 	中国	c=0 d=0.1 t=265
+enckkkk 	口口	c=0 d=0.1 t=93
+enckkkt 	只只叭我	c=0 d=0.1 t=201
+enckkkw 	只只叭	c=0 d=0.1 t=200
+enckkll 	口口田	c=0 d=0.1 t=94
+enckkll 	口田	c=0 d=0.1 t=94
+enckktr 	只叭我	c=0 d=0.1 t=201
+enckktw 	只叭我人	c=0 d=0.1 t=202
+encktwd 	叭我人有	c=0 d=0.1 t=203
+encktww 	叭我人	c=0 d=0.1 t=202
+enckwkw 	只只	c=0 d=0.1 t=199
+enckwkw 	只叭	c=0 d=0.1 t=200
+enckwtr 	叭我	c=0 d=0.1 t=201
+enclafj 	困惑刊	c=1 d=1 t=76
+enclglg 	国国	c=0 d=0.1 t=238
+encllmm 	田山	c=0 d=0.1 t=96
+encmgtk 	同和	c=0 d=0.1 t=267
+encmtrd 	同和的有	c=0 d=0.1 t=269
+encmtrq 	同和的	c=0 d=0.1 t=268
+encnabn 	民了	c=0 d=0.1 t=280
+encnamg 	民同	c=0 d=0.1 t=250
+encnbna 	发了民	c=0 d=0.1 t=249
+encnbnm 	发了民同	c=0 d=0.1 t=250
+encnbnn 	民了发以	c=0 d=0.1 t=282
+encnbnt 	民了发	c=0 d=0.1 t=281
+encnbvc 	已子女又	c=0 d=0.1 t=111
+encnbvv 	已子女	c=0 d=0.1 t=110
+encnfnf 	展示展示	c=0 d=0.1 t=82
+encnfnf 	展示异域	c=0 d=0.1 t=83
+encnfnf 	异域异地	c=0 d=0.1 t=84
+encnnbb 	已子	c=0 d=0.1 t=109
+encnnbn 	以发了	c=0 d=0.1 t=248
+encnnbn 	以发了民	c=0 d=0.1 t=249
+encnnmm 	已山	c=0 d=0.1 t=28
+encnnxc 	发以经	c=0 d=0.1 t=283
+encntbn 	发了	c=0 d=0.1 t=248
+encntny 	发以	c=0 d=0.1 t=282
+encnynt 	以发	c=0 d=0.1 t=247
+encnyxc 	以经	c=0 d=0.1 t=283
+encoopp 	火之	c=0 d=0.1 t=107
+encqqee 	金月	c=0 d=0.1 t=80
+encqqww 	金人	c=0 d=0.1 t=4
+encqwee 	金人月	c=0 d=0.1 t=5
+encqwer 	金人月白	c=0 d=0.1 t=6
+encrdwt 	的有人我	c=0 d=0.1 t=271
+encrdww 	的有人	c=0 d=0.1 t=270
+encrewq 	白月人金	c=0 d=0.1 t=101
+encreww 	白月人	c=0 d=0.1 t=100
+encrqde 	的有	c=0 d=0.1 t=269
+encrqtk 	的和	c=0 d=0.1 t=215
+encrree 	白月	c=0 d=0.1 t=99
+encrrtt 	白禾	c=0 d=0.1 t=7
+encrtyg 	的和主	c=0 d=0.1 t=216
+encrtyu 	白禾言立	c=0 d=0.1 t=9
+encrtyu 	的和主产	c=0 d=0.1 t=217
+encrtyy 	白禾言	c=0 d=0.1 t=8
+encrtyy 	的和主主	c=0 d=0.1 t=207
+encsbje 	李明	c=1 d=1 t=143
+encsdfb 	要在地	c=0 d=0.1 t=229
+encsdff 	木大土	c=0 d=0.1 t=17
+encsdfg 	木大土王	c=0 d=0.1 t=18
+encsdfg 	要在地一	c=0 d=0.1 t=230
+encsjee 	李明鹏	c=0 d=0.1 t=145
+encsjee 	李明鹏鹏	c=0 d=0.1 t=146
+encsjsj 	李明李明	c=0 d=0.1 t=144
+encssaa 	木工	c=0 d=0.1 t=89
+encssdd 	木大	c=0 d=0.1 t=16
+encsvdh 	要在	c=0 d=0.1 t=228
+enctkrq 	和的	c=0 d=0.1 t=268
+enctkyg 	和主	c=0 d=0.1 t=216
+enctrde 	和的有	c=0 d=0.1 t=269
+enctrdw 	和的有人	c=0 d=0.1 t=270
+enctree 	禾白月	c=0 d=0.1 t=99
+enctrew 	禾白月人	c=0 d=0.1 t=100
+enctrww 	我人	c=0 d=0.1 t=212
+enctryg 	我主	c=0 d=0.1 t=272
+encttrr 	禾白	c=0 d=0.1 t=98
+encttyy 	禾言	c=0 d=0.1 t=8
+enctwde 	我人有	c=0 d=0.1 t=213
+enctwdr 	我人有的	c=0 d=0.1 t=214
+enctyud 	和主产不	c=0 d=0.1 t=218
+enctyui 	禾言立水	c=0 d=0.1 t=10
+enctyut 	和主产	c=0 d=0.1 t=217
+enctyut 	我主产	c=0 d=0.1 t=273
+enctyuu 	我主产产	c=0 d=0.1 t=274
+enctyuu 	禾言立	c=0 d=0.1 t=9
+enctyyg 	和主主	c=0 d=0.1 t=207
+enctyyu 	和主主产	c=0 d=0.1 t=208
+encuddh 	产不不	c=0 d=0.1 t=210
+encudye 	产不为	c=0 d=0.1 t=219
+encudyy 	产不为这	c=0 d=0.1 t=220
+encuioo 	立水火	c=0 d=0.1 t=11
+encuiop 	立水火之	c=0 d=0.1 t=12
+encutdh 	产不	c=0 d=0.1 t=218
+encutut 	产产	c=0 d=0.1 t=274
+encuuii 	立水	c=0 d=0.1 t=104
+encvbnm 	女子已山	c=0 d=0.1 t=28
+encvbnn 	女子已	c=0 d=0.1 t=27
+encvcxg 	女又幺一	c=0 d=0.1 t=113
+encvcxx 	女又幺	c=0 d=0.1 t=112
+encvvbb 	女子	c=0 d=0.1 t=26
+encvvcc 	女又	c=0 d=0.1 t=111
+encwdrq 	人有的	c=0 d=0.1 t=214
+encwdrt 	人有的和	c=0 d=0.1 t=215
+encwerr 	人月白	c=0 d=0.1 t=6
+encwert 	人月白禾	c=0 d=0.1 t=7
+encwgdd 	保击厨厨	c=0 d=0.1 t=196
+encwgdg 	保击厨	c=0 d=0.1 t=195
+encwgwg 	命命	c=0 d=0.1 t=186
+encwkgb 	保击	c=1 d=1 t=194
+encwtyg 	人我主	c=0 d=0.1 t=272
+encwtyu 	人我主产	c=0 d=0.1 t=273
+encwwde 	人有	c=0 d=0.1 t=213
+encwwee 	人月	c=0 d=0.1 t=5
+encwwgb 	命保击	c=0 d=0.1 t=194
+encwwgd 	命保击厨	c=0 d=0.1 t=195
+encwwqq 	人金	c=0 d=0.1 t=101
+encwwtr 	人我	c=0 d=0.1 t=271
+encwwwg 	命命保击	c=0 d=0.1 t=194
+encxcny 	经以	c=0 d=0.1 t=246
+encxcvb 	幺又女子	c=0 d=0.1 t=26
+encxcvv 	幺又女	c=0 d=0.1 t=25
+encxnnb 	经以发了	c=0 d=0.1 t=248
+encxnnt 	经以发	c=0 d=0.1 t=247
+encxnxn 	纟纟	c=0 d=0.1 t=254
+encxxcc 	幺又	c=0 d=0.1 t=24
+encxxgg 	幺一	c=0 d=0.1 t=113
+encxxxn 	纟纟纟	c=0 d=0.1 t=254
+encyehh 	刘鹏些些	c=0 d=0.1 t=184
+encyehx 	刘鹏些	c=0 d=0.1 t=183
+encyeye 	为为	c=0 d=0.1 t=277
+encyeye 	刘鹏刘鹏	c=0 d=0.1 t=182
+encyeyp 	为这	c=0 d=0.1 t=220
+encyeyr 	刘鹏证提	c=0 d=0.1 t=162
+encygrj 	证提	c=1 d=1 t=162
+encygut 	主产	c=0 d=0.1 t=273
+encygyg 	主主	c=0 d=0.1 t=207
+encyjee 	刘鹏	c=1 d=1 t=182
+encynbn 	这民了	c=0 d=0.1 t=280
+encynbn 	这民了发	c=0 d=0.1 t=281
+encypaa 	这工	c=0 d=0.1 t=222
+encypna 	这民	c=0 d=0.1 t=279
+encyrye 	证提刘鹏	c=0 d=0.1 t=164
+encyryj 	证提刘	c=0 d=0.1 t=163
+encyudd 	主产不不	c=0 d=0.1 t=210
+encyudh 	主产不	c=0 d=0.1 t=218
+encyudy 	主产不为	c=0 d=0.1 t=219
+encyuii 	言立水	c=0 d=0.1 t=104
+encyuio 	言立水火	c=0 d=0.1 t=11
+encyuut 	主产产	c=0 d=0.1 t=274
+encyyud 	主主产不	c=0 d=0.1 t=209
+encyyut 	主主产	c=0 d=0.1 t=208
+encyyuu 	言立	c=0 d=0.1 t=103
