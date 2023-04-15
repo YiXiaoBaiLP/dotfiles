@@ -7,7 +7,7 @@ customization:
 patch:
   "key_binder/bindings":
     - {accept: "Control+Shift+space", toggle: full_shape, when: always}
-  "menu/page_size": 5
+  "menu/page_size": 7
   schema_list:
     - {schema: clover}
     - {schema: wubi98}
