@@ -1,4 +1,4 @@
-# ArchLinux配置教程<br>
+# ArchLinux 相关软件的配置 <br>
 ### [下载Arch](https://archlinux.org/download/ "在下方选择中国源进行下载操作")<br>
 - 在页面下方选择中国源进行下载
 ### 制作U盘启动盘<br>
